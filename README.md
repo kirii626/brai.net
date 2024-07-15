@@ -45,4 +45,6 @@ Una vez clonado, ve hacia la ruta donde lo clonaste y abre la carpeta de "proyec
 
 
 
+Hecho por Alejandra K. Justiniano Olmos y Mateo Santiago Márquez
+
 
