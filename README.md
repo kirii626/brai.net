@@ -16,6 +16,14 @@ HTML 5
 
 CSS 3
 
+## Librerias necesarias
+
+python-docx: la puedes descargar mediante este comando
+
+        pip install python-docx
+PyMuPDF: la puedes descargar mediante este comando 
+
+        pip install PyMuPDF
 
 ### Modo de uso
 Puedes clonar el repositorio mediante el link de:
