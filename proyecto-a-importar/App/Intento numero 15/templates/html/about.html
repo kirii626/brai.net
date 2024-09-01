@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BRAI.NET - Quienes Somos</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,13 +29,13 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="{{ url_for('quienes_somos') }}">¿Quienes somos?</a>
+                                    <a class="nav-link active" aria-current="page" href="{{ url_for('about') }}">¿Quienes somos?</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="{{ url_for('faqs') }}">FAQS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="{{ url_for('iniciar_sesion') }}">Iniciar Sesión</a>
+                                    <a class="nav-link active" aria-current="page" href="{{ url_for('login') }}">Iniciar Sesión</a>
                                 </li>
                         </div>
                     </div>
@@ -49,21 +49,27 @@
             </div>
             <div class="cards-container">
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ url_for('static', filename='templates/images/braille.jpg') }}" class="card-img-top" alt="...">
+                    <img src="{{ url_for('static', filename='images/braille.jpg') }}"" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">En BRAI.NET, creemos que todos tienen derecho a acceder a la información de manera equitativa. Nuestro objetivo es eliminar las barreras que dificultan este acceso, utilizando la tecnología como una herramienta para la inclusión.</p>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ url_for('static', filename='templates/images/braillee.webp') }}" class="card-img-top" alt="...">
+                    <img src="{{ url_for('static', filename='images/braillee.webp') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Nuestro equipo está comprometido en crear soluciones intuitivas y accesibles, diseñadas específicamente para personas con dificultades visuales. Nos esforzamos por hacer que cada usuario se sienta empoderado y conectado.</p>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ url_for('static', filename='templates/images/manos-braille.jpg') }}" class="card-img-top" alt="...">
+                    <img src="{{ url_for('static', filename='images/manos-braille.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Apoyamos la diversidad y la inclusión en todo lo que hacemos. A través de BRAI.NET, queremos demostrar que la tecnología puede ser un puente para unir a las personas, independientemente de sus capacidades visuales.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ url_for('static', filename='images/braille-reading.webp') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Creemos en la innovación constante para mejorar la accesibilidad. Con BRAI.NET, queremos abrir nuevas posibilidades para que las personas con dificultades visuales puedan aprender, comunicarse y participar plenamente en la sociedad.</p>
                     </div>
                 </div>
             </div>

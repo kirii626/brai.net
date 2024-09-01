@@ -16,13 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // Actualizar el estilo del textarea traducido y su contenido
         if (originalTextarea.value.trim() !== defaultText && originalTextarea.value.trim() !== "") {
             translatedTextarea.style.fontFamily = "'braille', 'Montserrat', sans-serif";
-            translatedTextarea.style.backgroundColor = "#ABE188"; // Ajusta el color de fondo según sea necesario
+            translatedTextarea.style.backgroundColor = "#1e1e1e"; // Ajusta el color de fondo según sea necesario
             translatedTextarea.value = originalTextarea.value;
             translatedTextarea.removeAttribute('placeholder'); // Elimina el placeholder si hay contenido
         } else {
             
             translatedTextarea.style.fontFamily = "'Montserrat', sans-serif";
-            translatedTextarea.style.backgroundColor = "#ABE188"; // Ajusta el color de fondo según sea necesario
+            translatedTextarea.style.backgroundColor = "#1e1e1e"; // Ajusta el color de fondo según sea necesario
             translatedTextarea.value = ""; // Borra cualquier contenido
             translatedTextarea.placeholder = "Tu texto traducido"; // Restaura el placeholder
         }

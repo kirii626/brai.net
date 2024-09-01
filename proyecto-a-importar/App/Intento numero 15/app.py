@@ -76,9 +76,9 @@ def contacto():
 def faqs():
     return render_template('html/faqs.html')
 
-@app.route('/iniciar-sesion')
-def iniciar_sesion():
-    return render_template('html/iniciar-sesion.html')
+@app.route('/login')
+def login():
+    return render_template('html/login.html')
 
 @app.route('/recursos')
 def recursos():
@@ -88,9 +88,13 @@ def recursos():
 def upload():
     return render_template('html/upload.html')
 
-@app.route('/quienes-somos')
-def quienes_somos():
-    return render_template('html/quienes-somos.html')
+@app.route('/about')
+def about():
+    return render_template('html/about.html')
+
+@app.route('/signin')
+def signin():
+    return render_template('html/signin.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
