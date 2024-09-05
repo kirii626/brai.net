@@ -40,33 +40,42 @@ h2 {
 }
 
 
-@media (max-width: 768px) {
-    h2 {
-        font-size: 24px;
-        text-align: center;
-        
+/* Ajustes para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+    .cards-container {
+        flex-direction: column; /* Cambiamos la dirección a columna vertical */
+        align-items: center; /* Centramos las tarjetas verticalmente */
+    }
+
+    .card {
+        width: 100%; /* Ocupan todo el ancho disponible */
+        margin-bottom: 10px; /* Espacio entre las tarjetas */
     }
 
     .text {
-        padding: 15px;
-        font-size: 16px;
-        text-align: justify;
-    }
-
-    .content {
-        padding: 10px;
+        font-size: 0.9rem; /* Tamaño de fuente ligeramente más pequeño */
+        max-width: 100%; /* Limita la longitud de línea al ancho del contenedor */
+        padding: 0 10px; /* Espacio interno en el texto */
     }
 }
 
-/* Ajustes generales para pantallas medianas */
-@media (min-width: 769px) and (max-width: 1200px) {
-    h2 {
-        font-size: 28px;
+
+/* Ajustes para pantallas medianas (tablet) */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .cards-container {
+        flex-direction: row; /* Cambiamos la dirección a fila horizontal */
+        justify-content: space-between; /* Distribución equitativa entre las tarjetas */
+    }
+
+    .card {
+        width: calc(33.33% - 20px); /* Ancho de cada tarjeta (33.33% con margen) */
     }
 
     .text {
-        padding: 20px;
-        font-size: 18px;
+        font-size: 1rem; /* Tamaño de fuente relativo */
+        max-width: 100%; /* Limita la longitud de línea al ancho del contenedor */
+        /* Otros estilos... */
+        padding: 0 10px 0 10px;
     }
 }
 
