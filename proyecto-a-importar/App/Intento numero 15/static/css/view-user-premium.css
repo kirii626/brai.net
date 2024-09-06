@@ -1,0 +1,71 @@
+/* Estilos para el contenedor de la página */
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el perfil de usuario */
+.user-profile h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #ABE188; /* Acento verde */
+}
+
+.user-info p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.favorite-translations, .processed-files, .last-translations {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.favorite-translations h2, .processed-files h2, .last-translations h2{
+    color: #ABE188; /* Acento verde */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.favorite-translations ul, .processed-files ul, .last-translations ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.favorite-translations li, .processed-files li, .last-translations li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    .favorite-translations h2, .processed-files h2, .last-translations h2{
+        font-size: 1.5rem;
+    }
+
+    .favorite-translations li, .processed-files li, .last-translations li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .favorite-translations h2, .processed-files h2, .last-translations h2 {
+        font-size: 1.3rem;
+    }
+
+    .favorite-translations li, .processed-files li, .last-translations li {
+        font-size: 0.9rem;
+    }
+}

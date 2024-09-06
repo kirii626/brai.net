@@ -96,5 +96,13 @@ def about():
 def signin():
     return render_template('html/signin.html')
 
+@app.route('/myprofile')
+def myprofile():
+    return render_template('html/view-user.html')
+
+@app.route('/profilePremium')
+def profilePremium():
+    return render_template('html/view-user-premium.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,0 +1,137 @@
+/* Estilos para el contenedor de la página */
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el perfil de usuario */
+.user-profile h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #ABE188; /* Acento verde */
+}
+
+.user-info p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Estilos para las traducciones favoritas */
+.last-translations h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #ABE188; /* Acento verde */
+}
+
+.last-translations ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.last-translations li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    word-break: break-word; /* Para que el texto no desborde */
+}
+
+.premium-info {
+    background-color: #222; /* Fondo oscuro */
+    border: 2px solid #ABE188; /* Borde verde acentuado */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    animation: pulse 2s infinite;
+}
+
+.premium-info h2 {
+    color: #ABE188;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.premium-info ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    margin: 15px 0;
+}
+
+.premium-info li {
+    margin: 10px 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.premium-info .change {
+    background-color: #ABE188;
+    color: #000;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.premium-info .change:hover {
+    background-color: #90c572; /* Un tono más claro de verde */
+    transform: scale(1.05);
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(171, 225, 136, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(171, 225, 136, 1);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(171, 225, 136, 0.8);
+    }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .user-profile h1 {
+        font-size: 2rem;
+    }
+
+    .user-info p, .favorite-translations li {
+        font-size: 1rem;
+    }
+
+    .content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-profile h1 {
+        font-size: 1.75rem;
+    }
+
+    .user-info p, .favorite-translations li {
+        font-size: 0.9rem;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}

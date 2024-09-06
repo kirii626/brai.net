@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRAI.NET - Mi Cuenta</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/view-user.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/view-user-premium.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -50,17 +50,27 @@
                     </div>
                     <div class="last-translations">
                         <h2>Últimas traducciones</h2>
-                        <ul>
+                        <ul id="ultimas-list">
                             <li>Texto original: </li>
                             <li>Traducción a Braille: </li>
                         </ul>
                     </div>
-                    <div class="premium-info">
-                        <button class="change">Cambiar a premium!</button>
-                        <ul>
-                            <li>Accede a tu historial de traducciones</li>
-                            <li>Guarda tus traducciones favoritas</li>
-                            <li>Accede a los archivos traducidos que procesaste</li>
+                    <div class="favorite-translations">
+                        <h2>Traducciones Favoritas</h2>
+                        <ul id="favoritas-list">
+                            <li>
+                                <p>Texto original: </p>
+                                <p>Traducción a Braille: </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="processed-files">
+                        <h2>Archivos Procesados</h2>
+                        <ul id="procesados-list">
+                            <li>
+                                <p></p>
+                                <p></p>
+                            </li>
                         </ul>
                     </div>
                 </div>
